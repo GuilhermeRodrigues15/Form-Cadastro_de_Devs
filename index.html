@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+	<meta charset="UTF-8">
+	<title>Cadastro de DEVs</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div>
+		<form action="#">
+			<div>
+				<label for="name">Nome</label>
+				<input id="name" type="text" name="name" placeholder="Insira aqui seu nome"i>
+			</div>
+
+			<br>
+
+			<div>
+				<label for="email">Email</label>
+				<input id="email" type="email" name="email">
+			</div>
+
+			<br>
+
+			<div>
+				<label for="age">Idade (opcional)</label>
+				<input id="age" type="text" name="age">
+			</div>
+
+			<br>
+			
+			<div>
+				<label for="situation">Qual opção descreve melhor sua função atual?</label>
+				<select id="situation" name="situation">
+					<option value="#">Selecione uma opção</option>
+					<option value="#">Estudante tempo integral</option>
+					<option value="#">Estudante meio periodo</option>
+					<option value="#">Trabalho tempo integral</option>
+					<option value="#">Trabalho meio periodo</option>
+					<option value="#">Outro</option>
+					<option value="#">Prefiro não dizer</option>
+				</select>
+			</div>
+
+			<br>
+			
+			<div>
+				<p>Selecione seu nivel de senioridade: </p>
+				<div>
+					<input id="radio-junior" type="radio" name="radio-junior" value="radio-noname">
+					<label for="radio-junior">Junior</label>
+				</div>
+
+				<br>
+				
+
+				<div>
+					<input id="radio-pleno" type="radio" name="radio-pleno" value="radio-noname">
+					<label for="radio-pleno">Pleno</label>
+				</div>
+
+				<br>
+				
+				<div>
+					<input id="radio-senior" type="radio" name="radio-senior" value="radio-noname">
+					<label for="radio-senior">Senior</label>
+				</div>
+
+				<br>
+				
+				<div>
+					<label>O que prefere fazer no seu tempo livre?</label>
+					<select id="whatyoudo" name="whatyoudo">
+						<option value="#">Desenvolver projetos pessoais</option>
+						<option value="#">Desenhar layouts</option>
+						<option value="#">Participar de campeonatos de programação</option>
+						<option value="#">Jogar online</option>
+					</select>
+				</div>
+
+				<br>
+				
+				<div>
+					<p>Com o que você trabalha? </p>
+
+					<br>
+					
+					<div>
+						<input id="front-checkbox" type="checkbox" name="front-checkbox">
+						<label for="front">Front-end</label>
+					</div>
+
+					<br>
+					
+					<div>
+						<input id="back-checkbox" type="checkbox" name="back-checkbox">
+						<label for="back-checkbox">Back-end</label>
+					</div>
+
+					<br>
+					
+					<div>
+						<input id="design-checkbox" type="checkbox" name="design-checkbox">
+						<label for="design-checkbox">Design</label>
+					</div>
+
+					<br>
+					
+					<div>
+						<input id="data-checkbox" type="checkbox" name="data-checkbox">
+						<label for="data-checkbox">Data Science</label>
+					</div>
+
+					<br>
+					
+					<div>
+						<input id="infra-checkbox" type="checkbox" name="infra-checkbox">
+						<label for="infra-checkbox">Infraestrutura</label>
+					</div>
+
+					<br>
+					
+					<div>
+						<input id="outro-checkbox" type="checkbox" name="outro-checkbox">
+						<label for="outro-checkbox">Outro</label>
+					</div>
+
+					<br>
+					
+					<div>
+						<p>Deseja me enviar uma mensagem?</p>
+						<textArea placeholder="Escreva sua mensagem aqui..."></textArea>
+					</div>
+
+					<br>
+					
+					<div>
+						<input type="button" value="Enviar">
+					</div>
+				</div>
+			</div>	
+		</form>
+	</div>
+</body>
+</html>
