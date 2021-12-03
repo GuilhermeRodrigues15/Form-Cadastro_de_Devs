@@ -1,6 +1,116 @@
 body{
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
 	align-itens: center;
+	justify-content: center;
+	text-align: center;
+	color: #fff;
+	font-family:  Verdana, Geneva, sans-serif;
+	background: #1b1b32;
+	background-image: linear-gradient(115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7)), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
+.main{
+	align-self: center;
+	text-align: left;
+	width: 600px;
+	box-sizing: border-box;
+	padding: 2.5em;
+	border-radius: 3px;
+	background-color: rgba(27, 27, 50, 0.8);
+}
+
+.form-item{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 25px;
+}
+
+label, p{
+	font-size: 1.1rem;
+}
+
+label{
+    margin-bottom: 8px;
+}
+
+p{
+    margin-bottom: 10px;
+}
+
+input, select, option{
+	widows: 100%;
+	height: 30px;
+	box-sizing: border-box;
+    border: none;
+	border-radius: 3px;
+	padding: 5px 3px 3px 3px;
+    background-color: #fff;
+    color: #708090;
+}
+
+select:focus{
+    color: #000;
+}
+
+input:focus, select:focus, textArea:focus{
+    border:none;
+    box-shadow: none;
+    outline: none;
+}
+
+
+input::-webkit-input-placeholder, select, option{
+	font-size: 15px;
+}
+
+.minititle{
+    font-size: 18px;
+    font-weight: 200;
+}
+
+span{
+    font-size: 14px;
+    font-weight: none;
+}
+
+.radio-space, .checkbox-space{
+	display: flex;
+	align-items: center;
+}
+
+.radio-space label, .checkbox-space label{
+	margin-top: 4px;
+	margin-bottom: 0;
+}
+
+input[type="radio"], input[type="checkbox"]{
+    margin-right: 8px;
+    width: 14px;
+}
+
+input[type="radio"]{
+    width: 14px;
+}
+
+
+textArea {
+	min-width: 513px;
+    max-width: 513px;
+	min-height: 100px;
+    margin-top: 8px;
+    
+}
+
+input[type='button']{
+	background-color: #228B22;
+	border-radius: 1px;
+	height: 35px;
+	margin-top: 25px;
+	font-size: 1rem;
+	color: #fff;
+    font-weight: bold;
+}

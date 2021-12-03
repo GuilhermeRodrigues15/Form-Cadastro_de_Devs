@@ -6,31 +6,34 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
+
 	<div>
+		<h1>Amigos DEVS</h1>
+		<h2>Que tal criarmos uma lista de amigos DEVS?</h2>
+	</div>
+
+	<div class="main">
 		<form action="#">
-			<div>
-				<label for="name">Nome</label>
-				<input id="name" type="text" name="name" placeholder="Insira aqui seu nome"i>
+			<div class="form-item">
+				<label for="name" class="minititle">Nome</label>
+				<input id="name" type="text" name="name" placeholder="Insira seu nome"i>
 			</div>
 
-			<br>
 
-			<div>
-				<label for="email">Email</label>
-				<input id="email" type="email" name="email">
+			<div class="form-item">
+				<label for="email" class="minititle">Email</label>
+				<input id="email" type="email" name="email" placeholder="Insira seu email">
 			</div>
 
-			<br>
 
-			<div>
-				<label for="age">Idade (opcional)</label>
-				<input id="age" type="text" name="age">
+			<div class="form-item">
+				<label for="age" class="minititle">Idade <span>(opcional)</span> </label>
+				<input id="age" type="text" name="age" placeholder="Idade">
 			</div>
 
-			<br>
 			
-			<div>
-				<label for="situation">Qual opção descreve melhor sua função atual?</label>
+			<div class="form-item">
+				<label for="situation" class="minititle">Qual opção descreve melhor sua função atual?</label>
 				<select id="situation" name="situation">
 					<option value="#">Selecione uma opção</option>
 					<option value="#">Estudante tempo integral</option>
@@ -42,103 +45,91 @@
 				</select>
 			</div>
 
-			<br>
 			
-			<div>
-				<p>Selecione seu nivel de senioridade: </p>
-				<div>
-					<input id="radio-junior" type="radio" name="radio-junior" value="radio-noname">
+			<div class="form-item">
+				<p class="minititle">Em qual momento da sua carreira está atualmente?</p>
+				<div class="radio-space">
+					<input id="radio-junior" type="radio" name="radio-senioridade" value="radio-noname">
 					<label for="radio-junior">Junior</label>
 				</div>
 
-				<br>
 				
-
-				<div>
-					<input id="radio-pleno" type="radio" name="radio-pleno" value="radio-noname">
+				<div class="radio-space">
+					<input id="radio-pleno" type="radio" name="radio-senioridade" value="radio-noname">
 					<label for="radio-pleno">Pleno</label>
 				</div>
 
-				<br>
 				
-				<div>
-					<input id="radio-senior" type="radio" name="radio-senior" value="radio-noname">
+				<div class="radio-space">
+					<input id="radio-senior" type="radio" name="radio-senioridade" value="radio-noname">
 					<label for="radio-senior">Senior</label>
 				</div>
+			</div>
 
-				<br>
-				
-				<div>
-					<label>O que prefere fazer no seu tempo livre?</label>
+				<div class="form-item">
+					<label class="minititle">O que prefere fazer no seu tempo livre?</label>
 					<select id="whatyoudo" name="whatyoudo">
+                        <option value="#" selected disabled >Selecione ...</option>
 						<option value="#">Desenvolver projetos pessoais</option>
 						<option value="#">Desenhar layouts</option>
 						<option value="#">Participar de campeonatos de programação</option>
 						<option value="#">Jogar online</option>
 					</select>
 				</div>
-
-				<br>
 				
-				<div>
-					<p>Com o que você trabalha? </p>
-
-					<br>
+				<div class="form-item">
+					<p class="minititle">Com o que gosta de trabalhar? </p>
 					
-					<div>
+					<div class="checkbox-space">
 						<input id="front-checkbox" type="checkbox" name="front-checkbox">
 						<label for="front">Front-end</label>
 					</div>
-
-					<br>
 					
-					<div>
+					<div class="checkbox-space">
 						<input id="back-checkbox" type="checkbox" name="back-checkbox">
 						<label for="back-checkbox">Back-end</label>
 					</div>
-
-					<br>
 					
-					<div>
+					<div class="checkbox-space">
 						<input id="design-checkbox" type="checkbox" name="design-checkbox">
 						<label for="design-checkbox">Design</label>
 					</div>
-
-					<br>
 					
-					<div>
+					<div class="checkbox-space">
 						<input id="data-checkbox" type="checkbox" name="data-checkbox">
 						<label for="data-checkbox">Data Science</label>
 					</div>
-
-					<br>
 					
-					<div>
+					<div class="checkbox-space">
 						<input id="infra-checkbox" type="checkbox" name="infra-checkbox">
 						<label for="infra-checkbox">Infraestrutura</label>
 					</div>
-
-					<br>
 					
-					<div>
+					<div class="checkbox-space">
 						<input id="outro-checkbox" type="checkbox" name="outro-checkbox">
 						<label for="outro-checkbox">Outro</label>
 					</div>
-
-					<br>
-					
-					<div>
-						<p>Deseja me enviar uma mensagem?</p>
-						<textArea placeholder="Escreva sua mensagem aqui..."></textArea>
-					</div>
-
-					<br>
-					
-					<div>
-						<input type="button" value="Enviar">
-					</div>
 				</div>
-			</div>	
+
+                <div class="form-item">
+                    <label for="github-link" class="minititle">GitHub <span>(opcional)</span></label>
+                    <input id="github-link" type="text" name="github-link" placeholder="github.com/username">
+                </div>
+
+                <div class="form-item">
+                    <label for="linkedin-link" class="minititle">Linkedin <span>(opcional)</span></label>
+                    <input id="linkedin-link" type="text" name="linkedin-link" placeholder="linkedin.com/username">
+                </div>
+
+                <div class="form-item">
+                    <label for="mesage" class="minititle">Deseja me enviar uma mensagem? <span(opcional)></span></label>
+                    <textArea id="mesage" name="mesage" placeholder="Escreva aqui sua mensagem..."></textArea>
+                </div>
+
+				<div class="form-item">
+					<input type="button" value="Enviar">
+				</div>
+			</div>
 		</form>
 	</div>
 </body>
